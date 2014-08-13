@@ -1,4 +1,8 @@
-FacebookLike
-============
+Facebook Like Button
+====================
 
-[Bolt Extension] A small extension to add a 'Facebook Like'-button to your site, when using &lt;code>{{ facebooklike() }}&lt;/code> in your templates.
+The "Facebook Like Button" is a small extension to insert a Facebook Like Button
+in your templates. Use it by simply placing the following in your template:
+
+    {{ facebooklike() }}
+
