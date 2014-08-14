@@ -30,6 +30,11 @@ class Extension extends \Bolt\BaseExtension
 
     }
 
+    public function getName()
+    {
+        return "Facebook Like";
+    }
+
     public function initialize()
     {
 
