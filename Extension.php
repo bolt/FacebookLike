@@ -57,7 +57,7 @@ class Extension extends \Bolt\BaseExtension
             $this->config['language'] = "en_US";
         }
 
-        $this->insertSnippet(SnippetLocation::END_OF_BODY, 'facebookScript');
+        $this->addSnippet(SnippetLocation::END_OF_BODY, 'facebookScript');
         $this->addTwigFunction('facebooklike', 'facebookLike');
 
     }
