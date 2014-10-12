@@ -1,6 +1,6 @@
 {
     "name": "bolt/facebooklike",
-    "description": "",
+    "description": "Extension to insert a Facebook Like Button in your templates",
     "type": "bolt-extension",
     "keywords": [],
     "require": {
