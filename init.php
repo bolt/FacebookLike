@@ -1,5 +1,5 @@
 <?php
 
-use FacebookLike\Extension;
+use Bolt\Extension\Bolt\FacebookLike\Extension;
 
 $app['extensions']->register(new Extension($app));
