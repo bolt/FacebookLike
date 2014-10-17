@@ -1,6 +1,6 @@
 {
     "name": "bolt/facebooklike",
-    "description": "",
+    "description": "Extension to insert a Facebook Like Button in your templates",
     "type": "bolt-extension",
     "keywords": [],
     "require": {
@@ -18,12 +18,7 @@
             "init.php"
         ],
         "psr-4": {
-            "FacebookLike\\": ""
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.7.*"
+            "Bolt\\Extension\\Bolt\\FacebookLike\\": ""
         }
     }
 }

@@ -1,35 +1,12 @@
 <?php
 // Facebook Like Extension for Bolt
 
-namespace FacebookLike;
+namespace Bolt\Extension\Bolt\FacebookLike;
 
 use Bolt\Extensions\Snippets\Location as SnippetLocation;
 
 class Extension extends \Bolt\BaseExtension
 {
-
-    public function info()
-    {
-
-        $data = array(
-            'name' =>"Facebook Like Button",
-            'description' => "A small extension to add a 'Facebook Like'-button to your site, ".
-                             "when using <code>{{ facebooklike() }}</code> in your templates.",
-            'author' => "Bob den Otter",
-            'link' => "http://bolt.cm",
-            'version' => "1.0",
-            'required_bolt_version' => "1.0",
-            'highest_bolt_version' => "1.0",
-            'type' => "Twig function",
-            'first_releasedate' => "2012-10-10",
-            'latest_releasedate' => "2013-01-27",
-            'allow_in_user_content' => true,
-        );
-
-        return $data;
-
-    }
-
     public function getName()
     {
         return "Facebook Like";
@@ -66,10 +43,10 @@ class Extension extends \Bolt\BaseExtension
     {
 
         $language = $this->config['language'];
-        
+
         $html = <<< EOM
         <div id="fb-root"></div>
-        <script>(function(d, s, id) {
+        <script>(function (d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
           if (d.getElementById(id)) return;
           js = d.createElement(s); js.id = id;
@@ -77,6 +54,7 @@ class Extension extends \Bolt\BaseExtension
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
 EOM;
+
         return $html;
 
     }
