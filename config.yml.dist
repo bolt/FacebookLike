@@ -1,4 +1,8 @@
-# style is standard, button_count or box_count
+# Button style. Options are:
+# - standard        Displays the button with data about friends
+# - button          Just displays the button
+# - button_count    Displays the button with a count to the right
+# - box_count       Displays the button with a count at the top
 style: button_count
 
 # width of the button in pixels. do not add 'px'.
